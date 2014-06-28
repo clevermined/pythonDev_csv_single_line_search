@@ -4,6 +4,9 @@ def csvSingle(inputString,index):
     """parse csv string. return string of specified index position.
        check string length for out of list bounds error tolerance.
        if index is at least on less than the length of input string.
+       
+       usage: >>> csvSingle('one,two,three,"four,five",six, seven', 0)
+       will return: "one" which is the 0th element of the string
     """
     try:
         checkString = len(inputString) -1
